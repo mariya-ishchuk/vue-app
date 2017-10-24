@@ -17,7 +17,7 @@
 const menuItems = [
     { id: 1, text: 'Image' },
     { id: 2, text: 'Frame' },
-    { id: 3, text: 'Header' },
+    { id: 3, text: 'Heading' },
     { id: 4, text: 'FingerPrints' }
 ]
 

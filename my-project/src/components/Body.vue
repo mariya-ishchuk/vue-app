@@ -7,19 +7,22 @@
         <ImagePage />
     </div>
     <div v-if='id == 2'>
-        Frame
+        <FramePage />
     </div>
     <div v-if='id == 3'>
-        Header
+        <HeadingPage />
     </div>
     <div v-if='id == 4'>
-        Fingerprints
+        <FingerprintsPage />
     </div>
   </div>
 </template>
 
 <script>
 import ImagePage from './ImagePage/ImagePage'
+import FramePage from './FramePage/FramePage'
+import HeadingPage from './HeadingPage/HeadingPage'
+import FingerprintsPage from './FingerprintsPage/FingerprintsPage'
 
 export default {
   name: 'Body',
@@ -30,7 +33,10 @@ export default {
   },
   props: ['id'],
   components: {
-    ImagePage
+    ImagePage,
+    FramePage,
+    HeadingPage,
+    FingerprintsPage
   }
 }
 </script>
