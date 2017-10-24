@@ -1,19 +1,27 @@
 <template>
   <div>
     <transition name="fade">
-        <p v-if="id == 1">hello</p>
-    </transition>
-    <div v-if='id == 1'>
+      <div v-if='id == 1'>
         <ImagePage />
-    </div>
-    <div v-if='id == 2'>
-        <FramePage />
-    </div>
-    <div v-if='id == 3'>
-        <HeadingPage />
-    </div>
-    <div v-if='id == 4'>
-        <FingerprintsPage />
+      </div>
+    </transition>
+    <transition name="fade">
+      <div v-if='id == 2'>
+          <FramePage />
+      </div>
+    </transition>
+    <transition name="fade">
+      <div v-if='id == 3'>
+          <HeadingPage />
+      </div>
+    </transition>
+    <transition name="fade">
+      <div v-if='id == 4'>
+          <FingerprintsPage />
+      </div>
+    </transition>
+    <div class="cb-wrapper">
+      <div id="cb-items" class="cb-item1"></div>
     </div>
   </div>
 </template>
