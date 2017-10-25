@@ -23,6 +23,9 @@
     <div class="cb-wrapper">
       <div id="cb-items" class="cb-item1"></div>
     </div>
+    <div>
+        <Total />
+    </div>
   </div>
 </template>
 
@@ -31,6 +34,7 @@ import ImagePage from './ImagePage/ImagePage'
 import FramePage from './FramePage/FramePage'
 import HeadingPage from './HeadingPage/HeadingPage'
 import FingerprintsPage from './FingerprintsPage/FingerprintsPage'
+import Total from './Total/Total'
 
 export default {
   name: 'Body',
@@ -44,7 +48,8 @@ export default {
     ImagePage,
     FramePage,
     HeadingPage,
-    FingerprintsPage
+    FingerprintsPage,
+    Total
   }
 }
 </script>
